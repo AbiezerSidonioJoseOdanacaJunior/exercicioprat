@@ -4,12 +4,14 @@ class Equipamento:
         self.patrimonio = patrimonio
         self.disponivel = True
         
-    def exibir_dados(self):
+    def exibir_dados(self): 
         status = "Disponivel" if self.disponivel else "Esprestado"
         return f"{self.patrimonio} - {self.nome} - {status}"
     
 notebook = Equipamento("Notebook Dell", "PAT-001")
 projetor = Equipamento("Projetor Epson", "PAT-002")
+notebook2 = Equipamento("Mack book Air", "MAC-001")
     
 print(notebook.exibir_dados())
 print(projetor.exibir_dados())
+print(notebook2.exibir_dados())
